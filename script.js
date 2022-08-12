@@ -14,8 +14,6 @@ function showCourses(search) {
         let title = data[x]['title']
         let lower_title = title.toLowerCase()
         let find = lower_title.indexOf(search)
-        console.log(find);
-        console.log(search)
         if (find <= -1) continue
         let courseLink = data[x]['link']
         let urlImage = data[x]['image']
