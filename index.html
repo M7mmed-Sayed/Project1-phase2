@@ -9,7 +9,7 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         />
-
+        <script src="script.js"></script>
         <title>Udemy</title>
     </head>
     <body>
@@ -30,10 +30,10 @@
                 <li class="item"><a href="#">categories</a></li>
                 <li class="item search-form">
                     <form>
-                        <button type="submit">
+                        <button type="button" onclick="searchByInputValue();" onsubmit="return false">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
-                        <input type="search" placeholder="Search..." />
+                        <input type="search" id="input-search" placeholder="Search..." />
                     </form>
                 </li>
                 <li class="item udy-bus"><a href="#">Udemy Business</a></li>
@@ -110,278 +110,14 @@
                                     >Explor Python</a
                                 >
                             </div>
-                            <div class="courses">
-                                <div class="course">
-                                    <img
-                                        class="img-corse"
-                                        src="https://img-c.udemycdn.com/course/240x135/394676_ce3d_5.jpg"
-                                    />
-                                    <div>
-                                        <h3 class="course-discrption">
-                                            Learn Python: The Complete Python
-                                            Programming
-                                        </h3>
-                                        <p>Avinash Jain, The Codex</p>
-                                        <div class="rate">
-                                            <h3
-                                                style="
-                                                    color: rgb(110, 44, 0);
-                                                    margin-right: 3px;
-                                                "
-                                            >
-                                                4.4
-                                            </h3>
-                                            <ul class="rank-corse">
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star star-icon"
-                                                    ></i>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star star-icon"
-                                                    ></i>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star star-icon"
-                                                    ></i>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star star-icon"
-                                                    ></i>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star-half-stroke star-icon"
-                                                    ></i>
-                                                </li>
-                                            </ul>
-                                            <h6 style="margin: 5px">(2,929)</h6>
-                                        </div>
-                                        <h4>E£679.99</h4>
-                                    </div>
-                                </div>
-                                <div class="course">
-                                    <img
-                                        class="img-corse"
-                                        src="https://img-c.udemycdn.com/course/240x135/396876_cc92_7.jpg"
-                                    />
-                                    <div>
-                                        <h3 class="course-discrption">
-                                            Learning Python for Data Analysis
-                                            and Visualization
-                                        </h3>
-                                        <p>Jose Portilla</p>
-                                        <div class="rate">
-                                            <h3
-                                                style="
-                                                    color: rgb(110, 44, 0);
-                                                    margin-right: 3px;
-                                                "
-                                            >
-                                                4.4
-                                            </h3>
-                                            <ul class="rank-corse">
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star star-icon"
-                                                    ></i>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star star-icon"
-                                                    ></i>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star star-icon"
-                                                    ></i>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star star-icon"
-                                                    ></i>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star-half-stroke star-icon"
-                                                    ></i>
-                                                </li>
-                                            </ul>
-                                            <h6 style="margin: 5px">(2,929)</h6>
-                                        </div>
-                                        <h4>E£1,599.99</h4>
-                                    </div>
-                                </div>
-                                <div class="course">
-                                    <img
-                                        class="img-corse"
-                                        src="https://img-c.udemycdn.com/course/240x135/405878_e5a0_3.jpg"
-                                    />
-                                    <div>
-                                        <h3 class="course-discrption">
-                                            Python for Beginners - Learn
-                                            Programming from scratch
-                                        </h3>
-                                        <p>Edwin Diaz</p>
-                                        <div class="rate">
-                                            <h3
-                                                style="
-                                                    color: rgb(110, 44, 0);
-                                                    margin-right: 3px;
-                                                "
-                                            >
-                                                4.4
-                                            </h3>
-                                            <ul class="rank-corse">
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star star-icon"
-                                                    ></i>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star star-icon"
-                                                    ></i>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star star-icon"
-                                                    ></i>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star star-icon"
-                                                    ></i>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star-half-stroke star-icon"
-                                                    ></i>
-                                                </li>
-                                            </ul>
-                                            <h6 style="margin: 5px">
-                                                (190,076)
-                                            </h6>
-                                        </div>
-                                        <h4>E£679.99</h4>
-                                    </div>
-                                </div>
-                                <div class="course">
-                                    <img
-                                        class="img-corse"
-                                        src="https://img-c.udemycdn.com/course/240x135/426570_1b91_3.jpg"
-                                    />
-                                    <div>
-                                        <h3 class="course-discrption">
-                                            Learn Python: Python for Beginners
-                                        </h3>
-                                        <p>Abrar Hussain</p>
-                                        <div class="rate">
-                                            <h3
-                                                style="
-                                                    color: rgb(110, 44, 0);
-                                                    margin-right: 3px;
-                                                "
-                                            >
-                                                4.4
-                                            </h3>
-                                            <ul class="rank-corse">
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star star-icon"
-                                                    ></i>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star star-icon"
-                                                    ></i>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star star-icon"
-                                                    ></i>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star star-icon"
-                                                    ></i>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star-half-stroke star-icon"
-                                                    ></i>
-                                                </li>
-                                            </ul>
-                                            <h6 style="margin: 5px">
-                                                (29,033)
-                                            </h6>
-                                        </div>
-                                        <h4>E£319.99</h4>
-                                    </div>
-                                </div>
-                                <div class="course">
-                                    <img
-                                        class="img-corse"
-                                        src="https://img-c.udemycdn.com/course/240x135/449532_2aa9_7.jpg"
-                                    />
-                                    <div>
-                                        <h3 class="course-discrption">
-                                            Python Beyond the Basics -
-                                            Object-Oriented Programming
-                                        </h3>
-                                        <p>Infinite Skills</p>
-                                        <div class="rate">
-                                            <h3
-                                                style="
-                                                    color: rgb(110, 44, 0);
-                                                    margin-right: 3px;
-                                                "
-                                            >
-                                                4.4
-                                            </h3>
-                                            <ul class="rank-corse">
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star star-icon"
-                                                    ></i>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star star-icon"
-                                                    ></i>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star star-icon"
-                                                    ></i>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star star-icon"
-                                                    ></i>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa-solid fa-star-half-stroke star-icon"
-                                                    ></i>
-                                                </li>
-                                            </ul>
-                                            <h6 style="margin: 5px">
-                                                (10,408)
-                                            </h6>
-                                        </div>
-                                        <h4>E£519.99</h4>
-                                    </div>
-                                </div>
+                           
+                            <div class="courses" id="courses">
+                              
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
         </div>
-        <script src="script1 .js" type="module"></script>
     </body>
 </html>

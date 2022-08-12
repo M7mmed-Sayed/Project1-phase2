@@ -46,7 +46,7 @@ input[type='search'] {
     border: none;
 }
 
-button[type='submit'] {
+button[type='button'] {
     overflow: hidden;
     margin-left: 10px;
     background: transparent;
@@ -190,9 +190,9 @@ a:hover {
     list-style: none;
     display: flex;
 }
-.course-discrption {
+.title {
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
 }
 .star-icon {
