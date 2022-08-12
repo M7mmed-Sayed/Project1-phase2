@@ -1,18 +1,29 @@
+
+/* add enter key event to search */
+const elem = document.getElementById('input-search')
+elem.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+        searchByInputValue()
+    }
+})
+// local api to get courses
 const getAllCourses = 'http://localhost:3009/courses'
+// make it globle to limit wasting time to load the data 
 let data
 async function callGetAPI(url) {
     const response = await fetch(url)
     data = await response.json()
-    let search = ''// search by defualt value empty string
+    let search = '' // search by defualt value empty string
     showCourses(search)
 }
 callGetAPI(getAllCourses)
+
 function showCourses(search) {
     let courses_continer = ''
-    search=search.toLowerCase()
+    search = search.toLowerCase()// make it lowercase to search on all cases
     for (let x in data) {
         let title = data[x]['title']
-        let lower_title = title.toLowerCase()
+        let lower_title = title.toLowerCase()// convert title to lower to search
         let find = lower_title.indexOf(search)
         if (find <= -1) continue
         let courseLink = data[x]['link']
