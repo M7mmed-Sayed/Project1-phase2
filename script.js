@@ -1,13 +1,7 @@
 
-/* add enter key event to search */
-const elem = document.getElementById('input-search')
-elem.addEventListener('keypress', (event) => {
-    if (event.key === 'Enter') {
-        searchByInputValue()
-    }
-})
+
 // local api to get courses
-const getAllCourses = 'http://localhost:3009/courses'
+const getAllCourses = 'https://mocki.io/v1/696ac62f-fa19-470a-bd4b-89d75685ca88'
 // make it globle to limit wasting time to load the data 
 let data
 async function callGetAPI(url) {
